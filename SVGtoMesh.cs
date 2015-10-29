@@ -1,5 +1,9 @@
-// Authors: Dillon Keith Diep and Jason Haciepiri
-// Class for parsing SVG files and generating meshes from the extracted properties
+/*
+* Parses SVG files and generates meshes from the resulting information
+*
+* @authors Dillon Keith Diep and Jason Haciepiri
+* 
+*/
 
 using UnityEngine;
 using System;

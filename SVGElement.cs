@@ -1,5 +1,9 @@
-// Authors: Dillon Keith Diep and Jason Haciepiri
-// Base SVG Element class, used to parse, calculate and store SVG element variables for mesh generation.
+/*
+* Base SVG Element class, used to parse, calculate and store SVG element properties
+*
+* @authors Dillon Keith Diep and Jason Haciepiri
+* 
+*/
 
 using UnityEngine;
 using System.Collections.Generic;

@@ -1,7 +1,9 @@
-// Inheriting from SVGElement, SVGPolygon parses information from a <polygon> tag as found in an SVG file,
-// to create a point list. Then, if the polygon has a stroke (outline), the parsed information is used to 
-// find the points of the polygon inflated by the stroke width.
-// This information can then be used to generate a 2D mesh to represent the polygon and its stroke within Unity.
+/*
+* Parses the polygon pointlist, and is able to calculate inflated/deflacted convex polygons for strokes
+*
+* @author Jason Haciepiri
+* 
+*/
 
 using UnityEngine;
 using System.Collections.Generic;
