@@ -15,9 +15,6 @@ public class SVGtoMesh : MonoBehaviour
     public Material mat;
     public Material matNoAlpha;
 
-    // Colour conversion utility object
-    HexConverter HexConv = new HexConverter();
-
     // bounds variables
     float lowX = 1000.0f, highX = -1000.0f, lowY = 1000.0f, highY = -1000.0f;
 
