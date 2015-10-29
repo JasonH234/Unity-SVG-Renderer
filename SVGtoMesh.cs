@@ -51,7 +51,7 @@ public class SVGtoMesh : MonoBehaviour
         return str;
     }
 
-    // Parsed the file specified by the path parameter
+    // Parse the file specified by the path parameter
     void importSVG(string path)
     {
         SVGElement element = new SVGElement();
