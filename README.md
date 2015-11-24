@@ -1,5 +1,5 @@
 # Unity SVG Renderer
-Sample source code for parsing and rendering SVG in Unity, aimed to provide an example of how an SVG renderer can be built in Unity and to provide support for simple SVG rendering. It was originally developed for 4.5 or 4.6, although it has been shown to work on 5.2.3 also.
+Sample source code for parsing and rendering SVG in Unity, to provide an example of how an SVG renderer can be built in Unity and to provide support for simple SVG rendering. It was originally developed for 4.5 or 4.6, although it has been shown to work on 5.2.3 also.
 
 While we did develop support for the full specification as part of a project last year, we unfortunately do not currently have the time to clean up and support the rest of the renderer in order to provide it here. As such we have only provided support for SVG polygons in this sample - though we may address this at a later time. 
 
