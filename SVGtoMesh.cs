@@ -22,7 +22,7 @@ public class SVGtoMesh : MonoBehaviour
     // bounds variables
     float lowX = 1000.0f, highX = -1000.0f, lowY = 1000.0f, highY = -1000.0f;
 
-    // Create SVG type selector
+    // Create SVG type selector, only polygon is supported in sample
     enum SVGType
     {
         polygon,
@@ -78,7 +78,8 @@ public class SVGtoMesh : MonoBehaviour
                 element = new SVGPolygon(SVGElements[i]);
                 type = SVGType.polygon;
                 break;
-            case "path":
+                //Not supported in sample
+            /*case "path":
                 element = new SVGPath(SVGElements[i]);
                 type = SVGType.path;
                 break;
@@ -101,7 +102,7 @@ public class SVGtoMesh : MonoBehaviour
             case "text":
                 element = new SVGText(SVGElements[i]);
                 type = SVGType.text;
-                break;
+                break;*/
             default:
                 if (!(String.IsNullOrEmpty(e) || e != "svg")) break;
                     Debug.Log ("Element '" + SVGElements[i] + "' not recognised");
@@ -157,11 +158,11 @@ public class SVGtoMesh : MonoBehaviour
         t.transform.localScale *= 0.1f;
         t.transform.position += new Vector3(scale*pos.x, -scale*pos.y, depth);
         t.transform.parent = this.transform;
-        txtObj.anchor = TextAnchor.LowerLeft;
 
         // Add TextMesh component to object
         TextMesh txtObj = t.AddComponent<TextMesh>();
-        
+        //Set alignment
+        txtObj.anchor = TextAnchor.LowerLeft;
         // Set and format text from parsed svg file information
         txtObj.text = text;
         txtObj.fontSize = fontSize;
