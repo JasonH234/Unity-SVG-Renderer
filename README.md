@@ -8,7 +8,7 @@ Implementing SVG primitives (Rect, Line, Circle, Ellipse..) is less complex than
 Provided is an example scene with the SVGtoMesh and GenerateSVG scripts attached to an empty game object. In order to generate an SVG object you must call the importSVG method of SVGtoMesh with the path of an SVG file under Assets/Resources/SVG/. For example, to create SVG objects from Assets/Resources/SVG/example.txt, you would simply call importSVG("example").In our case, we then used an XML layout in order to organize the resulting generated objects. In addition, you must provide two materials to the SVGtoMesh class to use on instantiated SVG objects - with alpha and without. 
 ![Example](https://github.com/JasonH234/Unity-SVG-Renderer/raw/master/ExampleSetup.PNG)
 
-The project uses the HexConverter and Traingulator classes from the Unify Wiki, which are included in the sample and can be found on the following links: 
+The project uses the HexConverter and Triangulator classes from the Unify Wiki, which are included in the sample and can be found on the following links: 
 http://wiki.unity3d.com/index.php?title=HexConverter
 http://wiki.unity3d.com/index.php?title=Triangulator 
 
